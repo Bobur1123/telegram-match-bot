@@ -39,9 +39,8 @@ function sendMatches() {
 }
 
 // Schedule: Every Mon, Wed, Fri at 04:00 PM
-cron.schedule('0 16 * * 1,3,5', () => {
+cron.schedule('0 9 * * 1,3,5', () => {
   sendMatches();
-  console.log('✅ Matches sent at 4:00 PM');
+  console.log('✅ Matches sent at 9:00 AM');
 });
-
 console.log('🤖 Telegram Match Bot is up and running...');
